@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #6c757d; /* Matches the footer color */
     color: #ffffff;
 }
 
@@ -37,6 +37,14 @@ header p {
     color: #17a2b8;
 }
 
+/* Section Backgrounds */
+section {
+    background-color: #6c757d; /* Matches footer */
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 /* Section Headings */
 h2 {
     text-align: center;
@@ -67,7 +75,7 @@ ul.list-unstyled li {
 
 /* Project Cards */
 .card {
-    background-color: #222;
+    background-color: #444;
     border: none;
     padding: 20px;
     margin: 10px auto;
@@ -75,10 +83,6 @@ ul.list-unstyled li {
     width: 80%;
     max-width: 600px;
     border-radius: 10px;
-}
-
-.card h3 {
-    font-size: 1.5rem;
 }
 
 /* Resume Section */
@@ -106,7 +110,7 @@ ul.list-unstyled li {
 
 /* Footer */
 footer {
-    background-color: #1e1e1e;
+    background-color: #6c757d;
     padding: 15px 0;
     text-align: center;
     font-size: 0.9rem;
