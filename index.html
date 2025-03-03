@@ -64,9 +64,29 @@
         </div>
     </section>
     <section id="resume" class="container my-5 text-center">
-        <h2>Resume</h2>
-        <p><a href="resume.pdf" target="_blank" class="btn btn-primary">Download Resume (PDF)</a></p>
+    <h2>Resume</h2>
+    <p><a href="resume.pdf" target="_blank" class="btn btn-primary">Download Resume (PDF)</a></p>
+    <button id="previewBtn" class="btn btn-success mt-3">Preview Resume</button>
+    <button id="hidePreviewBtn" class="btn btn-danger mt-3 d-none">Hide Preview</button>
+    <div id="resumePreview" class="mt-3 d-none">
+        <iframe src="resume.pdf" width="100%" height="600px"></iframe>
+    </div>
     </section>
+
+    <script>
+    document.getElementById('previewBtn').addEventListener('click', function() {
+        document.getElementById('resumePreview').classList.remove('d-none');
+        document.getElementById('hidePreviewBtn').classList.remove('d-none');
+        this.classList.add('d-none');
+    });
+
+    document.getElementById('hidePreviewBtn').addEventListener('click', function() {
+        document.getElementById('resumePreview').classList.add('d-none');
+        document.getElementById('previewBtn').classList.remove('d-none');
+        this.classList.add('d-none');
+    });
+    </script>
+
     <section id="contact" class="container my-5 text-center">
         <h2>Contact Information</h2>
         <p>Email: omar.elgaml@mohawkcollege.ca</p>
