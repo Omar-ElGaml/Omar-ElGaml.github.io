@@ -68,6 +68,11 @@ ul.list-unstyled {
     border-radius: 10px;
 }
 
+.bg-primary {
+    background-color: #008080 !important; /* Teal */
+    border-color: #006666 !important;
+}
+
 .btn-primary {
     background-color: #008080 !important; /* Teal */
     border-color: #006666 !important;
