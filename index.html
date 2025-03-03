@@ -4,59 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 class="disclaimer">Disclaimer: this website was created temporarily for an assignment </h1>
+    <header class="text-center py-4 bg-primary text-white">
+        <p class="disclaimer">This website was created temporarily for an assignment.</p>
         <h1>Omar ElGaml</h1>
         <p>Software Developer</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section id="summary">
+    <section id="summary" class="container my-5">
         <h2>Summarizing Statement</h2>
         <p>A brief introduction about yourself, your passion for software development, and career aspirations.</p>
     </section>
-    <section id="education">
+    <section id="education" class="container my-5">
         <h2>Education</h2>
         <p>Details about your academic background, degrees, certifications, and relevant coursework.</p>
     </section>
-    <section id="skills">
+    <section id="skills" class="container my-5">
         <h2>Skills</h2>
         <ul>
             <li>Programming Languages: Python, Java, JavaScript, C#</li>
-            <li>Frameworks: React, ASP.NET</li>
-            <li>Databases: MySQL, MongoDB, PostgreSQL</li>
+            <li>Frameworks: React, ASP.NET, Flask</li>
+            <li>Databases: MySQL, SQLite, MSSQL</li>
             <li>Other: Git, Docker, AWS</li>
         </ul>
     </section>
-    <section id="projects">
+    <section id="projects" class="container my-5">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="card p-3">
             <h3>Project Title</h3>
             <p>Brief description of the project, its purpose, technologies used, and link to GitHub or live demo.</p>
         </div>
     </section>
-    <section id="resume">
+    <section id="resume" class="container my-5">
         <h2>Resume</h2>
-        <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+        <p><a href="resume.pdf" target="_blank" class="btn btn-primary">Download Resume (PDF)</a></p>
     </section>
-    <section id="contact">
+    <section id="contact" class="container my-5">
         <h2>Contact Information</h2>
         <p>Email: omar.elgaml@mohawkcollege.ca</p>
         <p>GitHub: <a href="https://github.com/Omar-ElGaml">GitHub Profile</a></p>
     </section>
-    <footer>
-        <p>&copy; 2025 Omar ElGaml. All rights reserved.</p>
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
